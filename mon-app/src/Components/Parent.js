@@ -17,14 +17,14 @@ class Maman extends React.Component{
         render(){
 
             return(
-                <div>
+                <React.Fragment>
                     <h1>Maman</h1>
                     <button onClick = {this.donnerOrdre}>Donner un ordre</button>
                     <p>{this.state.messageMaman}</p>
                         <hr />
                         <Child name='Damien' functionReponse = {this.reponseEnfant} leState ={this.state} />
                 
-                </div>
+                </React.Fragment>
             )
                 
             
